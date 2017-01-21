@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1" session="true"
-	import="abc.*, java.util.*,javax.persistence.*"%>
+	import="portal.entity.* , java.util.*, javax.persistence.*"%>
 <!DOCTYPE HTML>
 <%
 	EntityManagerFactory emf = (EntityManagerFactory) getServletContext()

@@ -1,6 +1,6 @@
 package portal.entity;
 
-import javax.persistence.*;
+import javax.persistence.*; 
 
 @Entity
 public class Company {
@@ -8,6 +8,9 @@ public class Company {
 	private String Id;
 	private String companyName;
     private String email;
+    private String password;
+    private String logoUrl;
+    
 	public String getCompanyName() {
 		return companyName;
 	}
@@ -22,6 +25,14 @@ public class Company {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String Cname) {
+		this.password = SHAclass.generateHash(Cname);
 	}
 
 }
